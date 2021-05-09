@@ -14,5 +14,5 @@ jobs:
         uses: graveszhang/waka-box@master
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
-          GIST_ID: 1a9d6f8b99c6a6e4287ec1a1aef16611
+          GIST_ID: 06296b427610b004e9373363a8360afc
           WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
