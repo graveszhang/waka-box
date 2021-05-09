@@ -11,8 +11,10 @@ jobs:
     name: Update gist action
     runs-on: ubuntu-latest
     steps:
-      - uses: graveszhang/waka-box@master
-        with:
+      - uses: actions/checkout@master
+      - name: Update gist
+        uses: matchai/waka-box@master
+        env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
           GIST_ID: 1a9d6f8b99c6a6e4287ec1a1aef16611
           WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
