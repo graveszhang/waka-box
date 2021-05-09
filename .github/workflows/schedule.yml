@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@master
-      - name: Update waka-box gist
+      - name: Update gist
         uses: graveszhang/waka-box@master
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
