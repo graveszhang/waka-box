@@ -1,6 +1,7 @@
 name: Update gist with WakaTime stats
 on:
   schedule:
+    # UTC by default
     - cron: "0 2-11 * * 1-5"  # update every work hours on weekdays (10AM - 7PM in GMT+8)
     - cron: "0 16 * * *"      # update every night                  
   push:
