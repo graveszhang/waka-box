@@ -1,7 +1,8 @@
 name: Update gist with WakaTime stats
 on:
   schedule:
-    - cron: "0 0 * * *"
+    - cron: "0 10-19 * * 1-5" # update every work hours on weekdays
+    - cron: "0 0 * * *"       # update every night
   push:
     branches: 
       - master
